@@ -1,8 +1,9 @@
+
 /* Hero Section Styles */
 :root {
     --primary-color: #050505; /* Dark blue */
-    --secondary-color: #000000; /* Black */
-    --accent-color: #aeff00; /* Teal accent */
+    --secondary-color:#FFA500; /* Black */
+    --accent-color: #40ff00; /* Teal accent */
     --text-color: #ffffff;
     --text-secondary: #fffffff1;
 }
@@ -46,7 +47,7 @@ nav {
     transition: all 0.3s ease;
 }
 nav.scrolled {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
     padding: 15px 10%;
 }
 
@@ -157,7 +158,7 @@ nav.scrolled {
 .btn:hover {
     background-color:#ffffff;
     transform: translateY(-3px);
-    box-shadow:#aeff00;
+    box-shadow:#40ff00;
 }
 
 .btn-outline {
@@ -331,7 +332,7 @@ nav.scrolled {
 
 .stat-number {
     font-size: 2.5rem;
-    color: #aeff00;
+    color: #40ff00;
     margin-bottom: 5px;
 }
 
@@ -873,70 +874,43 @@ nav.scrolled {
 }
 
 .social-section {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
-.social-section h4 {
-    color: #ccd6f6;
-    margin-bottom: 15px;
-}
-
-.social-links {
+.social-icons {
     display: flex;
-    flex-direction: column;
     gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
 }
 
-.social-btn {
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 12px 20px;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: 1px solid transparent;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
 }
 
-/* Icon styling */
-.social-btn i {
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-/* Base styles for each button */
-.linkedin {
-    background-color: rgba(255, 255, 255, 0.05);
-    color: #ffffff;
-    border-color: #aeff00;
-}
-
-.github {
-    background-color: rgba(23, 21, 21, 0.1);
-    color: #f0f6fc;
-    border-color: #aeff00;
-}
-
-.twitter {
-    background-color: rgba(29, 161, 242, 0.1);
-    color: #1da1f2;
-    border-color: #aeff00;
-}
-
-/* Universal hover effect */
-.social-btn:hover {
+.social-icons a:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    background-color: #aeff00;
-    color: #000;
-    border-color: #aeff00;
+    opacity: 0.8;
 }
 
-/* Ensure icon color changes on hover */
-.social-btn:hover i {
-    color: #000;
+/* Specific colors for each platform */
+.social-icons .fa-linkedin-in:hover { background: #00aaff; }
+.social-icons .fa-github:hover { background: #9e9e9e; }
+.social-icons .fa-twitter:hover { background: #1da1f2; }
+.social-icons .fa-whatsapp:hover { background: #00ff5e; }
+.social-icons .fa-instagram:hover { 
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
+.social-icons .fa-reddit-alien:hover { background: #ff2200; }
 
 
 /* Contact Form */
@@ -1064,7 +1038,7 @@ nav.scrolled {
 }
 
 .logo span {
-    color: #aeff00;
+    color:#40ff00;
 }
 
 .flag-icon {
